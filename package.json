@@ -1,0 +1,20 @@
+{
+  "name": "proyectofc",
+  "version": "1.0.0",
+  "description": "Campus para un colegio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "Juan Guerrero, Juan Calderon, Linsay Bohada",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.75.0"
+  }
+}
