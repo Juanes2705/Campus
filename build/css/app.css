@@ -396,3 +396,31 @@ template {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
 }
+
+.barra-lateral {
+  background-color: #505045;
+  width: 80px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+}
+
+.barra-lateral img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.header-titulo {
+  margin-left: 120px;
+  padding: 20px;
+  text-align: start;
+}
+
+.icono-ajustes {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  width: 8rem;
+}

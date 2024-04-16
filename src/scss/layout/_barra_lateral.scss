@@ -19,5 +19,10 @@
     text-align: start;
 }
 .icono-ajustes{
-    max-width: 20rem;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    
+    
+    width: 8rem;
 }
