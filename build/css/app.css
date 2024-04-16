@@ -360,3 +360,39 @@ template {
 [hidden] {
   display: none;
 }
+
+.login_titulo {
+  display: flex;
+  justify-content: center;
+}
+
+.formulario {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.contenedor {
+  grid-row: 2;
+}
+
+.sombra {
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.75);
+  background-color: #f9f9e7;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    width: 50rem;
+    margin: 0 auto;
+  }
+}
+/*posicion del grid*/
+.posicion {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}

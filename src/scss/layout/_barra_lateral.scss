@@ -1,0 +1,23 @@
+.barra-lateral{
+    background-color: $gris;
+    width: 80px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+.barra-lateral  img{
+ 
+    display:block;
+    margin-bottom:10px;
+
+}
+.header-titulo{
+    margin-left: 120px;
+    padding: 20px;
+    text-align: start;
+}
+.icono-ajustes{
+    max-width: 20rem;
+}
