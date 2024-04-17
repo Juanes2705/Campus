@@ -1,28 +1,51 @@
-.barra-lateral{
+.barra-lateral {
     background-color: $gris;
-    width: 80px;
+    position: fixed;
+    top: 0;
+    left: -250px;
     height: 100%;
+    width: 80px;
+    transition: all 0.3s ease;
+}
+
+.overlay {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
-    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
 }
-.barra-lateral  img{
- 
-    display:block;
-    margin-bottom:10px;
 
+.icono-ajustes {
+    padding-top: 20px;
+    text-align: center;
 }
-.header-titulo{
-    margin-left: 120px;
-    padding: 20px;
-    text-align: start;
+
+.iconos {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+    display: block;
 }
-.icono-ajustes{
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    
-    
-    width: 8rem;
+
+.header-titulo {
+    padding-left: 20px;
+}
+
+/* Estilos para mostrar la barra lateral cuando está abierta */
+.sidebar-open {
+    left: 0;
+}
+
+/* Estilos para mostrar el fondo de superposición cuando la barra lateral está abierta */
+.sidebar-open + .overlay {
+    display: block;
+}
+
+/* Estilos para ocultar el fondo de superposición al cerrar la barra lateral */
+.overlay:not(.sidebar-open + .overlay) {
+    display: none;
 }

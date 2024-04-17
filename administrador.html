@@ -7,28 +7,30 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-    
     <header class="header header-titulo">
         <h2>Bienvenido admin</h2>
-            <div class="barra-lateral">
-                <div class="icono-ajustes">
-                    <a href="#">
-                        <img class="iconos" src="src/img/mensaje.svg" alt="mensajes">
-                    </a>
-                    <a href="#">
-                        <img class="iconos" src="src/img/matricular.svg" alt="matricular">
-                    </a>
-                    <a href="#">
-                        <img class="iconos" src="src/img/cursos.svg" alt="cursos">
-                    </a>
-                    <a href="#">
-                        <img class="iconos" src="src/img/perfil.svg" alt="perfil">
-                    </a>
-                </div>
-            </div>
+        <button class="btn-toggle-sidebar" onclick="toggleSidebar()">☰</button>
     </header>
-     <main>
-        <h3></h3>
+    <div class="overlay" onclick="closeSidebar()"></div>
+    <div class="barra-lateral" id="sidebar">
+        <div class="icono-ajustes">
+            <a href="#">
+                <img class="iconos" src="src/img/mensaje.svg" alt="mensajes">
+            </a>
+            <a href="#">
+                <img class="iconos" src="src/img/matricular.svg" alt="matricular">
+            </a>
+            <a href="#">
+                <img class="iconos" src="src/img/cursos.svg" alt="cursos">
+            </a>
+            <a href="#">
+                <img class="iconos" src="src/img/perfil.svg" alt="perfil">
+            </a>
+        </div>
+    </div>
+    <main>
+        <h3>Contenido principal</h3>
     </main>
+    <script src="src/js/scripts.js"></script> <!-- Agregar el script para el funcionamiento del botón -->
 </body>
 </html>
