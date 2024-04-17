@@ -10,27 +10,36 @@
     <header class="header header-titulo">
         <h2>Bienvenido admin</h2>
         <button class="btn-toggle-sidebar" onclick="toggleSidebar()">☰</button>
+       
+        <div class="overlay" onclick="closeSidebar()"></div>
+        <div class="barra-lateral" id="sidebar">
+            <div class="icono-ajustes">
+                <a href="#">
+                    <img class="iconos icono-perfil" src="src/img/perfil.svg" alt="perfil">
+                </a>
+                <a href="#">
+                    <img class="iconos" src="src/img/mensaje.svg" alt="mensajes">
+                </a>
+                <a href="#">
+                    <img class="iconos" src="src/img/matricular.svg" alt="matricular">
+                </a>
+                <a href="#">
+                    <img class="iconos" src="src/img/cursos.svg" alt="cursos">
+                </a>
+                
+            </div>
+        </div>   
     </header>
-    <div class="overlay" onclick="closeSidebar()"></div>
-    <div class="barra-lateral" id="sidebar">
-        <div class="icono-ajustes">
-            <a href="#">
-                <img class="iconos" src="src/img/mensaje.svg" alt="mensajes">
-            </a>
-            <a href="#">
-                <img class="iconos" src="src/img/matricular.svg" alt="matricular">
-            </a>
-            <a href="#">
-                <img class="iconos" src="src/img/cursos.svg" alt="cursos">
-            </a>
-            <a href="#">
-                <img class="iconos" src="src/img/perfil.svg" alt="perfil">
-            </a>
-        </div>
-    </div>
-    <main>
-        <h3>Contenido principal</h3>
+    
+    <main class="contenedor sombra">
+        <h3>Asuntos pendientes</h3>
     </main>
+    <footer class="footer">
+        <div class="contenedor">
+            <p class="copyright">Todos los derechos reservados - 2024 &copy;</p>
+        </div>
+        
+    </footer>
     <script src="src/js/scripts.js"></script> <!-- Agregar el script para el funcionamiento del botón -->
 </body>
 </html>

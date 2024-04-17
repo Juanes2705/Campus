@@ -1,5 +1,5 @@
 .barra-lateral {
-    background-color: $gris;
+    background-color: $azulito;
     position: fixed;
     top: 0;
     left: -250px;
@@ -20,20 +20,43 @@
 }
 
 .icono-ajustes {
-    padding-top: 20px;
-    text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center; // Centrar los iconos horizontalmente
+        margin-top: 20px; // Espacio superior para separar de otros elementos si es necesario
+             
 }
 
 .iconos {
     width: 40px;
     height: 40px;
     margin-bottom: 20px;
-    display: block;
+    border-radius: 50%; // Hace que el icono tenga forma circular
+    overflow: hidden; // Oculta cualquier contenido que sobresalga del borde circular
+    transition: background-color 0.3s ease;   
 }
+
+.iconos:hover {
+    background-color: $RosaSuave; 
+    transform: scale(1.1); // Aumenta ligeramente el tamaño del icono al hacer hover
+}
+
+/* Ajusta el margen inferior solo para el primer icono */
+.icono-perfil {
+    margin-bottom:80px; // Reduce el margen inferior
+}
+
+
+
 
 .header-titulo {
     padding-left: 20px;
 }
+
+
+
+
+
 
 /* Estilos para mostrar la barra lateral cuando está abierta */
 .sidebar-open {
@@ -49,3 +72,4 @@
 .overlay:not(.sidebar-open + .overlay) {
     display: none;
 }
+
